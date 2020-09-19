@@ -55,6 +55,7 @@ nav .flickity-prev-next-button.previous {
 }
 .section-1 .carousel-cell {
   width: 100%;
+  height: 400px;
 }
 .section-1 .carousel-cell img {
   width: 100%;
@@ -68,7 +69,7 @@ nav .flickity-prev-next-button.previous {
   padding: 20px 0 20px 20px;
   margin: 20px 0;
 }
-.section-1 .content-wrapper,
+.section-3 .content-wrapper,
 .section-2 .content-wrapper {
   width: 45%;
   font-size: 18px;
