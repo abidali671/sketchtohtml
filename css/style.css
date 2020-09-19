@@ -48,7 +48,19 @@ nav .flickity-prev-next-button.next,
 nav .flickity-prev-next-button.previous {
   display: none;
 }
-.section-1,
+/* section 1 */
+
+.section-1 {
+  width: 100%;
+}
+.section-1 .carousel-cell {
+  width: 100%;
+}
+.section-1 .carousel-cell img {
+  width: 100%;
+}
+
+.section-3,
 .section-2 {
   background-color: #141b26;
   display: flex;
@@ -65,15 +77,15 @@ nav .flickity-prev-next-button.previous {
   justify-content: space-between;
   letter-spacing: 3px;
 }
-.section-1 .img-wrapper,
+.section-3 .img-wrapper,
 .section-2 .img-wrapper {
   width: 55%;
 }
-.section-1 .img-wrapper img,
+.section-3 .img-wrapper img,
 .section-2 .img-wrapper img {
   width: 100%;
 }
-.section-1 .content-wrapper img,
+.section-3 .content-wrapper img,
 .section-2 .content-wrapper img {
   width: 60%;
 }

@@ -5,6 +5,3 @@ $(".main-carousel").flickity({
   contain: true,
   autoPlay: true,
 });
-
-// Custom Dock
-var dockItem;
