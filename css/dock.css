@@ -1,0 +1,36 @@
+/* dock - all */
+.dock {
+  position: relative;
+  height: 60px;
+  text-align: center;
+}
+.dock img {
+  border: none;
+}
+
+/* dock - top */
+.dock-container {
+  position: absolute;
+  height: 60px;
+  /* background: url(../img/dock-bg2.gif); */
+  padding-left: 20px;
+}
+a.dock-item {
+  display: block;
+  width: 40px;
+  color: #000;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  text-decoration: none;
+  font: bold 12px Arial, Helvetica, sans-serif;
+}
+.dock-item img {
+  border: none;
+  margin: 5px 10px 0px;
+  width: 100%;
+}
+.dock-item span {
+  display: none;
+  padding-left: 20px;
+}
