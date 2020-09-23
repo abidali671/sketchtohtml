@@ -12,25 +12,29 @@ body {
 }
 nav {
   background-color: #000;
-  padding: 0 50px;
   display: flex;
   position: relative;
-  height: 90px;
+  height: 7vw;
 }
 .logo {
   color: #fff;
-  font-size: 42px;
   position: absolute;
+  left: -10px;
   z-index: 999;
-  line-height: 90px;
+  height: calc(7vw + 30px);
+}
+
+.logo img {
+  height: 100%;
 }
 /* Custom top menu with dock */
 nav .main-carousel {
-  width: 950px;
+  width: 85%;
   margin-left: auto;
 }
 nav .carousel-cell {
-  height: 90px;
+  height: 7vw;
+  width: 7.5%;
   margin-right: 10px;
   display: flex;
   align-items: center;
@@ -40,7 +44,7 @@ nav .carousel-cell {
   z-index: 9999;
 }
 nav .carousel-cell img {
-  height: 70px;
+  height: 5.5vw;
 }
 nav .carousel-cell:hover {
   margin-top: 10px;
@@ -269,6 +273,7 @@ footer {
   margin-top: 2px;
   text-align: center;
   padding-left: 5px;
+  white-space: nowrap;
 }
 .social-icons {
   padding: 0 40px;
@@ -296,9 +301,19 @@ footer {
   margin-left: 20px;
 }
 @media (max-width: 900px) {
-  nav .main-carousel {
-    margin-left: 50px;
-    margin-right: 0;
+  nav {
+    height: 10vw;
+  }
+  .logo {
+    left: -20px;
+    height: calc(10vw + 30px);
+  }
+  nav .carousel-cell {
+    height: 10vw;
+    width: 10%;
+  }
+  nav .carousel-cell img {
+    height: 7vw;
   }
   .section-3 .content-wrapper,
   .section-2 .content-wrapper {
@@ -332,37 +347,45 @@ footer {
   .footer-content > div:nth-child(2) {
     border-right: 0px;
   }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-bottom > div:first-child {
+    margin-bottom: 20px;
+  }
+  .app-download {
+    margin: 20px 0;
+  }
 }
 @media (max-width: 750px) {
-  nav {
-    padding: 0 10px;
-    height: 65px;
-  }
-  nav .carousel-cell {
-    height: 65px;
-  }
-  nav .carousel-cell img {
-    height: 50px;
-  }
-  nav .main-carousel {
-    margin-left: 10px;
-    margin-right: 0;
-  }
-  .logo {
-    height: 50px;
-    line-height: 50px;
-    font-size: 26px;
-  }
-  .headline {
+  /* .headline {
     line-height: 30px;
     height: 30px;
     font-size: 14px;
-  }
+  } */
   .section-5 .carousel-cell {
     height: 80px;
   }
 }
 @media (max-width: 650px) {
+  nav {
+    height: 15vw;
+  }
+  .logo {
+    height: calc(15vw + 30px);
+    left: -30px;
+  }
+  nav .main-carousel {
+    width: 75%;
+  }
+  nav .carousel-cell {
+    height: 15vw;
+    width: 13%;
+  }
+  nav .carousel-cell img {
+    height: 13vw;
+  }
   .section-2,
   .section-3 {
     flex-direction: column-reverse;
