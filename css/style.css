@@ -15,29 +15,32 @@ nav {
   padding: 0 50px;
   display: flex;
   position: relative;
-  height: 70px;
+  height: 90px;
 }
 .logo {
   color: #fff;
   font-size: 42px;
-  line-height: 70px;
+  position: absolute;
+  z-index: 999;
+  line-height: 90px;
 }
 /* Custom top menu with dock */
 nav .main-carousel {
-  width: 725px;
+  width: 950px;
   margin-left: auto;
 }
 nav .carousel-cell {
-  height: 70px;
+  height: 90px;
   margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.3s;
   cursor: pointer;
+  z-index: 9999;
 }
 nav .carousel-cell img {
-  height: 50px;
+  height: 70px;
 }
 nav .carousel-cell:hover {
   margin-top: 10px;
@@ -109,9 +112,10 @@ nav .flickity-prev-next-button.previous {
 }
 .section-3 .img-wrapper,
 .section-2 .img-wrapper {
-  width: 55%;
-  height: 500px;
+  width: 50%;
+  height: 30vw;
 }
+
 .section-3 .img-wrapper img,
 .section-2 .img-wrapper img {
   width: 100%;
@@ -220,7 +224,7 @@ footer {
   margin-top: 10px;
 }
 .footer-content button {
-  background-color: #cddc39;
+  background-color: #d4e157;
   padding: 10px 60px;
   display: block;
   margin-top: 10px;
@@ -300,6 +304,21 @@ footer {
   .section-2 .content-wrapper {
     font-size: 16px;
   }
+  .section-2 .carousel-cell,
+  .section-3 .carousel-cell {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section-2 .content-wrapper,
+  .section-2 .img-wrapper,
+  .section-3 .content-wrapper,
+  .section-3 .img-wrapper {
+    width: 100%;
+  }
+  .section-2 .img-wrapper,
+  .section-3 .img-wrapper {
+    height: 50vw;
+  }
   .section-5 .carousel-cell {
     height: 90px;
   }
@@ -317,13 +336,13 @@ footer {
 @media (max-width: 750px) {
   nav {
     padding: 0 10px;
-    height: 50px;
+    height: 65px;
   }
   nav .carousel-cell {
-    height: 50px;
+    height: 65px;
   }
   nav .carousel-cell img {
-    height: 40px;
+    height: 50px;
   }
   nav .main-carousel {
     margin-left: 10px;
@@ -350,12 +369,7 @@ footer {
     align-items: center;
     padding: 20px;
   }
-  .section-2 .content-wrapper,
-  .section-2 .img-wrapper,
-  .section-3 .content-wrapper,
-  .section-3 .img-wrapper {
-    width: 100%;
-  }
+
   .section-2 .content-wrapper,
   .section-3 .content-wrapper {
     padding: 20px 0px;
