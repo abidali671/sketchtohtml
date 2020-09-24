@@ -404,16 +404,21 @@ footer {
     height: 70px;
     padding: 5px 10px;
   }
-  .footer {
-    padding: 40px 0;
+  footer {
+    padding: 10px 10px;
   }
   .footer-top {
     padding-bottom: 20px;
   }
   .footer-content > div {
-    min-width: 250px;
+    max-width: 550px;
+    width: 100%;
     margin: 20px auto;
+    padding: 5px 20px;
     border: 0px;
+  }
+  .social-icons {
+    justify-content: center;
   }
 }
 @media (max-width: 450px) {
