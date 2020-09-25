@@ -285,9 +285,12 @@ footer {
 }
 .social-icons img {
   height: 40px;
-  margin: 0 5px;
-  background: #fff;
-  border-radius: 10px;
+  padding: 0 5px;
+  background-size: 40%;
+  transition: 0.2s;
+}
+.social-icons img:hover {
+  transform: scale(1.1);
 }
 .app-download-box {
   display: none;
