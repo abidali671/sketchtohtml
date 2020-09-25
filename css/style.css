@@ -279,6 +279,7 @@ footer {
   padding: 0 40px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 .social-icons a {
   text-decoration: none;
@@ -292,7 +293,17 @@ footer {
 .social-icons img:hover {
   transform: scale(1.1);
 }
-.app-download-box {
+.app-download-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.app-download-icon img {
+  height: 40px;
+  margin: 15px 5px 0px 5px;
+}
+
+/* .app-download-box {
   display: none;
   text-align: center;
   flex-direction: column;
@@ -305,14 +316,14 @@ footer {
 .app-download {
   min-width: 316px;
   margin-left: auto;
-}
-.app-download a {
+} */
+/* .app-download a {
   text-decoration: none;
 }
 .app-download img {
   height: 40px;
   margin-left: 20px;
-}
+} */
 @media (max-width: 900px) {
   nav {
     height: 10vw;
@@ -367,18 +378,18 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .footer-content > div:last-child {
+  /* .footer-content > div:last-child {
     display: none;
-  }
+  } */
   .footer-bottom > div:first-child {
     margin-bottom: 20px;
   }
-  .app-download-box {
+  /* .app-download-box {
     display: flex;
   }
   .app-download {
     margin: 20px 0;
-  }
+  } */
 }
 @media (max-width: 750px) {
   /* .headline {
